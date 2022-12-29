@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>STUDENT RAGISTATION FORM</h1>
+        <h4>By : MOHIT VERMA</h4>
+
+        <div class="container left">
+            <div id="details">
+                <label for="inp_name" class="head">Name:</label>
+                <input type="text" name="name" id="inp_name" class="width clr_inp" placeholder="Enter Name">
+                <br>
+
+                <label for="inp_email" class="head">Email:</label>
+                <input type="email" name="email" id="inp_email" class="width clr_inp" placeholder="Enter email">
+                <br>
+
+                <label for="inp_img" class="head">Image:</label>
+                <input type="file" name="img" id="inp_img" accept="image/*" class="clr_inp">
+                <br>
+
+                <label for="gender" class="head">Gender:</label>
+                <div class="radios">
+                    <input type="radio" name="gender" id="inp_male" value="Male" class="gender"><label
+                        for="inp_male">Male</label><br>
+                    <input type="radio" name="gender" id="inp_female" value="Female" class="gender"><label
+                        for="inp_female">Female</label><br>
+                    <input type="radio" name="gender" id="inp_Other" value="Other" class="gender"><label
+                        for="inp_female">other</label>
+                </div>
+                <br>
+
+                <label for="skills" class="head">Skills:</label>
+                <div class="boxes">
+                    <input type="checkbox" name="C" id="inp_c" class="checkbox" value="C"><label
+                        for="imp_C">C</label>
+                        <input type="checkbox" name="C++" id="inp_c++" class="checkbox" value="C++"><label
+                        for="imp_C++">C++</label>
+                    <input type="checkbox" name="HTML" id="inp_html" class="checkbox" value="HTML"><label
+                    for="imp_html">HTML</label>
+                    <input type="checkbox" name="CSS" id="inp_css" class="checkbox" value="CSS"><label
+                    for="imp_css">CSS</label>
+                    <input type="checkbox" name="Java" id="inp_java" class="checkbox" value="Java"><label
+                        for="imp_java">Java</label>
+                    <input type="checkbox" name="Python" id="inp_Python" class="checkbox" value="Python"><label
+                        for="imp_Python">Python</label>
+                </div>
+                <br>
+
+                <div class="buttons">
+                    <button type="submit" id="submit">Enroll Student</button>
+                    <button id="clear">CLEAR</button>
+                </div>
+
+            </div>
+            <div class="container right">
+                <div id="output">
+
+                </div>
+            </div>
+        </div>
+        <script src="student.js"></script>
+</body>
+
+</html>
